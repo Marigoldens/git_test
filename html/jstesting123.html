@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="array_testing.js">
+        function add7(n){
+            let x = n+7;
+            return x;
+        }
+        function multiply(a, b){
+            let x = a * b;
+            return x; 
+        }
+
+        function capitalize(input){
+
+            const str = String(input);
+            if (str.length === 0){
+                return "";
+            }
+        
+            let myFIrstChar = str.charAt(0).toUpperCase();
+            let restOfChars = str.slice(1).toLowerCase();
+
+            return myFIrstChar + restOfChars
+        }
+        function lastLetter(text){
+            let letter = text.slice(-1);
+            return letter;
+        }
+    </script>
+
+</head>
+<body>
+</body>
+</html> 

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<!-- Forms take 2 properties the forms(action, method). action = where ; method = function-->
+    <!-- <form action="example.com/path" method="post"></form>-->
+<!--FORM FOR TEXT-->
+    <!--<form action="example.com/path" method="post"><input type="text"></form>-->
+    <!-- LABEL TO SPECIFY TEXT INPUT EXAMPLE -->
+        <form action="example.com/path" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name">
+        </form>
+        <!--The for="..." is bascially to associate it with a particular input from this input box, that thing also need to have an id-->
+
+    <h2>SHITTESTING</h2>
+<!--PLACEHOLDER ATRRIBUTE-->
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" placeholder="Bob...">
+    <!--VALUE FOR USERS TO SEE-->
+
+<!--THE NAME ATRRIBUTE-->
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name">
+    <!--for the backend to understand what htis is-->
+    <!--ALWAYS NEEDED --- variable name for the input-->
+
+
+<!--
+The TYPE ATTRIBUTE
+    EMail for emails 
+    Password for passwrods
+    Number for only numbers 
+    DATE for date times 
+
+            -->
+    <h2>PASSWORD SHITTESTING</h2>
+    <label for="user_password">Password:</label>
+    <input type="password" id="user_password" name="password">
+
+    <h2>DATE SHIT TESTING</h2>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+    <h2>NUMBER SHITTESTING 123</h2>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount">
+
+<!-- TEXT AREA NONESENSE-->
+    <h2>TESTAREA SHIT TESTING</h2>
+    <textarea>Some initial content</textarea>
+        <!--ACCEPTS row and col for the size of the box of the textarea STILL-->
+
+<!--SELECTION SHITTETING -->
+<h2>SLEECITON SHITTESTING 123</h2>
+<select name="Car">
+  <option value="mercedes">Mercedes</option>
+  <option value="tesla">Tesla</option>
+  <option value="volvo" selected>Volvo</option>
+  <option value="bmw">BMW</option>
+  <option value="mini">Mini</option>
+  <option value="ford">Ford</option>
+</select>
+    <!--THE VALUE ATTRIBUTE is sent to the server STILL-->
+
+
+    <h2>OPT TABLE SELECTION NONESENSE</h2>
+
+        <select name="fashion">
+        <optgroup label="Clothing">
+            <option value="t_shirt">T-Shirts</option>
+            <option value="sweater">Sweaters</option>
+            <option value="coats">Coats</option>
+        </optgroup>
+        <optgroup label="Foot Wear">
+            <option value="sneakers">Sneakers</option>
+            <option value="boots">Boots</option>
+            <option value="sandals">Sandals</option>
+        </optgroup>
+        </select>
+
+<!-- RADIO BUTTONS for smaller lists for users to see immedaitely -->
+    <h3>Ticket Type</h1>
+    <div>
+      <input type="radio" id="child" name="ticket_type" value="child">
+      <label for="child">Child</label>
+    </div>
+
+    <div>
+      <input type="radio" id="adult" name="ticket_type" value="adult" checked> <!-- CHECKED PRELOADS THIS OPTION FOR PAGE-->
+      <label for="adult">Adult</label>
+    </div>
+
+    <div>
+      <input type="radio" id="senior" name="ticket_type" value="senior">
+      <label for="senior">Senior</label>
+    </div>
+
+<H2>CHECKBOX SHITTESTING, WEATHER BUT CAN PICK MULTIPLE</H1>
+
+    <h3>Pizza Toppings</h1>
+
+    <div>
+    <input type="checkbox" id="sausage" name="topping" value="sausage">
+    <label for="sausage">Sausage</label>
+    </div>
+
+    <div>
+    <input type="checkbox" id="onions" name="topping" value="onions">
+    <label for="onions">Onions</label>
+    </div>
+
+    <div>
+    <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+    <label for="pepperoni">Pepperoni</label>
+    </div>
+
+    <div>
+    <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+    <label for="mushrooms">Mushrooms</label>
+    </div>
+
+    <h2>OR</h2>
+
+    <div>
+      <input type="checkbox" id="newsletter" name="news_letter">
+      <label for="newsletter">Send me the news letter</label>
+    </div>
+
+<H1>BUTTONS GOATS AND THEIR TYPES</H1>
+
+<button type="submit">MY TYPE IS = `SUBMIT`</button>
+<button type="reset">Reset, I reset ALL FORMS</button>
+<button type="button">BITCHASSS BUTTON NORMIE LOL Click to Toggle</button>
+
+
+<!--WHO THE FUCK IS FIRLED SET AM I RIGHT, allows us to group forms together, the div of forms-->
+<H1>FIELD SET</H1>
+    <fieldset>
+      <label for="first_name">First Name</label>
+      <input type="text" id="first_name" name="first_name">
+
+      <label for="last_name">Last Name</label>
+      <input type="text" id="last_name" name="last_name">
+    </fieldset>
+
+<!--WHO THE FUCK IS LEGEND AM I RIGHT, bascially a captio nfor the field set-->
+<fieldset>
+  <legend>Contact Details</legend>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="phone_number">Phone Number:</label>
+  <input type="tel" id="phone_number" name="phone_number">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+</fieldset>
+<h1>LEGEND + FIELDSET</h1>
+<fieldset>
+  <legend>Delivery Details</legend>
+
+  <label for="street_address">Street Address:</label>
+  <input type="text" id="street_address" name="street_address">
+
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city">
+
+  <label for="zip_code">Zip Code:</label>
+  <input type="text" id="zip_code" name="zip_code">
+</fieldset>
+
+
+<label for="name">
+  Name: <input type="text" id="name" name="user_name" />
+</label>
+
+
+<form>
+  <p>
+    <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry" />
+    <label for="taste_1">I like cherry</label>
+  </p>
+  <p>
+    <input type="checkbox" id="taste_2" name="taste_banana" value="banana" />
+    <label for="taste_2">I like banana</label>
+  </p>
+</form>
+
+
+    <script>
+
+    </script>
+</body>
+</html>
