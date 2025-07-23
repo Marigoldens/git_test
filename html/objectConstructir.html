@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function Player(name, marker) {
+              if (!new.target) {throw Error("You must use the 'new' operator to call the constructor");}
+            this.name = name;
+            this.marker = marker;
+            this.sayName = () => console.log(name)
+            }
+        
+        const player = new Player(`anos`, `X`);
+        player.sayName();
+
+
+        function Book(title, author, pages, read){
+            this.title = title
+            this.author = author
+            this.pages = pages
+            this.read = read
+            this.info = () => {console.log(`The ${title} is by ${author}, ${pages}, ${read}`)}
+        }
+
+        const spider = new Book(`spider man`,`marvel`, 123, `read`)
+        spider.info()
+        
+
+    </script>
+</body>
+</html>

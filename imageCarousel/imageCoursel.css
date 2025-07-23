@@ -1,0 +1,70 @@
+.imageCarousel {
+  position: relative;
+  width: 600px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  overflow: hidden; /* This acts as the "picture frame" */
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.imageContainer {
+  display: flex; /* This will arrange images in a row */
+  transition: transform 0.5s ease-in-out; /* For smooth transitions (optional but nice) */
+  height: 100%;
+}
+
+.imageContainer img {
+  width: 600px; /* Each image takes the full width of the carousel */
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  flex-shrink: 0; /* Prevents images from shrinking */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.5em;
+}
+
+.left-arrow {
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.right-arrow {
+  right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.navigation-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}

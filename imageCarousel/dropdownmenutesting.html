@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .dropdownMenu {
+        visibility: hidden;
+      }
+      .dropdownMenu.visible {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="menuBtn">Dispaly Menu</button>
+    <div class="dropdownMenu">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <script>
+      //   const dropdownMenu = document.querySelector(".dropdownMenu");
+      //   const menuBtn = document.querySelector("#menuBtn");
+      //   toggleView(menuBtn, dropdownMenu);
+      //   function toggleView(button, itemToggle) {
+      //     button.addEventListener("click", () => {
+      //       if (itemToggle.style.visibility === "hidden") {
+      //         itemToggle.style.visibility = "visible";
+      //       } else {
+      //         itemToggle.style.visibility = "hidden";
+      //       }
+      //     });
+      //   }
+      const dropdownMenu = document.querySelector(".dropdownMenu");
+      const menuBtn = document.querySelector("#menuBtn");
+
+      menuBtn.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("visible");
+      });
+    </script>
+  </body>
+</html>

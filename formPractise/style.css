@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+  height: 100vh;
+}
+
+#formSignUp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 100vh;
+}
+
+.formContainer {
+  background-color: gray;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputContainer {
+  background-color: gray;
+}
+.inputContainer input {
+  display: block;
+}
+.errorMsg {
+  color: rgb(0, 0, 0);
+  font-size: 0.6rem;
+  margin: 3px 0px 10px 0px;
+  font-weight: bolder;
+  text-align: left;
+  font-weight: 800;
+}
+
+.error {
+  border: 1px red solid;
+  background-color: rgb(255, 142, 142);
+}
+
+.correct {
+  border: 1px solid green;
+  background: rgb(193, 255, 193);
+}
